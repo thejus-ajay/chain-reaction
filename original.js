@@ -21,7 +21,8 @@ function off() {
   document.getElementById('overlay').style.display = 'none'
   var p = document.getElementById('players-input').value
   p = Number(p)
-  numberOfPlayer = p
+  if (p <= 25) numberOfPlayer = p
+  else numberOfPlayer = 25
 }
 
 

@@ -4,12 +4,17 @@ var charaterArry = ['.', '😎', '💥', '👽', '🤡', '🐲','🌛','👑','�
 var numberOfPlayer = 2;
 
 function on() {
+  document.getElementById('game').style.pointerEvents = 'none'
+  document.getElementById('game').style.opacity = '0.4'
+  
   document.querySelector('body').style.height = '100vh'
   document.querySelector('body').style.overflow = 'hidden'
   document.getElementById('overlay').style.display = 'inline-block'
 }
 
 function off() {
+  document.getElementById('game').style.pointerEvents = 'auto'
+  document.getElementById('game').style.opacity = '1'
 
   document.querySelector('body').style.height = ''
   document.querySelector('body').style.overflow = 'auto'

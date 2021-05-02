@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
-    <title>Document</title>
-</head>
-<body>
-<script src="original.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+    <title>Chain Reaction</title>
+  </head>
+  <body onload="on()">
+    <div id="overlay">
+      <form class="login-form" action="javascript:void(0);">
+        <div class="players">
+          <input id="players-input" type="number" max="25" min="2" placeholder="No. of Players" required>
+        </div>
+        <button type="button" onclick="off()" class="form-submit">Save</button>
+      </form>
+    </div>
+
+    <div id="game"></div>
+    <script src="original.js"></script>
+  </body>
 </html>

@@ -3,10 +3,27 @@ var playernumber = 1;
 var charaterArry = ['.', '😎', '💥', '👽', '🤡', '🐲','🌛','👑','🧡','💛','💚','💙','💜','🤎','🖤','⚽','💗','🔴','🟠','🟡','🟢','🔵','🟣','🟤','⚫','🎱']
 var numberOfPlayer = 2;
 
+function on() {
+  document.querySelector('body').style.height = '100vh'
+  document.querySelector('body').style.overflow = 'hidden'
+  document.getElementById('overlay').style.display = 'inline-block'
+}
+
+function off() {
+
+  document.querySelector('body').style.height = ''
+  document.querySelector('body').style.overflow = 'auto'
+  document.getElementById('overlay').style.display = 'none'
+  var p = document.getElementById('players-input').value
+  p = Number(p)
+  numberOfPlayer = p
+}
+
+
 var sHeight = window.innerHeight
 
 var col = 9
-// if(sHeight > 400) col = 5
+if(sHeight > 400) col = 5
 // if(sHeight > 630) col = 27
 // if(sHeight > 800) col = 14
 // if(sHeight > 1000) col = 10
@@ -24,12 +41,14 @@ var Values = new Array(n + 1).fill(0);
 var playerPosition = new Array(n + 1).fill(0);
 for (var i = 1; i < col * row + 1; i++) {
   var btn = document.createElement('BUTTON')
-  document.body.appendChild(btn)
+  document.getElementById('game').appendChild(btn)
   btn.id = i
   document.getElementById(i).classList.add('box1')
   
   btn.setAttribute('class', 'center')
   document.getElementById(i).onclick = function () {
+    if (numberOfPlayer == 0) numberOfPlayer = 2
+
     // if (playerPosition[this.id] == (playernumber - 1)|| playerPosition[this.id] == 0) {
     ChainReaction(this)
     // }
@@ -76,7 +95,7 @@ for (var i = 1; i < col * row + 1; i++) {
     // creating space
 
     var br = document.createElement('br')
-    document.body.appendChild(br)
+    document.getElementById('game').appendChild(br)
   }
 
   if (i == 1) {
@@ -353,3 +372,4 @@ function ChainReaction(e) {
     }
   }
 }
+

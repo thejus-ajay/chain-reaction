@@ -41,15 +41,32 @@ for (var i = 1; i < col * row + 1; i++) {
       }
       if (Values[j] == 1) {
         // console.log(playerPosition[j]);
-        document.getElementById(j).innerHTML = charaterArry[playerPosition[j]]
+        // document.getElementById(`span-${j}`).style.position = 'absolute'
+        document.getElementById(j).innerHTML = `<span id='span-${j}-1'>${charaterArry[playerPosition[j]]}</span>`
       }
       if (Values[j] == 2) {
         // console.log(playerPosition[j]);
-        document.getElementById(j).innerHTML = charaterArry[playerPosition[j]] + charaterArry[playerPosition[j]]
+        document.getElementById(j).innerHTML = `<span id='span-${j}-1'>${
+          charaterArry[playerPosition[j]]
+        }</span><span id='span-${j}-2'>${charaterArry[playerPosition[j]]}</span>`
+        document.getElementById(`span-${j}-1`).style.position = 'absolute'
+        document.getElementById(`span-${j}-1`).style.left = '0.7rem'
       }
       if (Values[j] == 3) {
         // console.log(playerPosition[j]);
-        document.getElementById(j).innerHTML = charaterArry[playerPosition[j]] + charaterArry[playerPosition[j]] + charaterArry[playerPosition[j]]
+        document.getElementById(j).innerHTML = `<span id='span-${j}-1'>${
+          charaterArry[playerPosition[j]]
+        }</span><span id='span-${j}-2'>${
+          charaterArry[playerPosition[j]]
+        }</span><span id='span-${j}-3'>${charaterArry[playerPosition[j]]}</span>`
+        document.getElementById(`span-${j}-1`).style.position = 'absolute'
+        document.getElementById(`span-${j}-1`).style.top = '0.4rem'
+        document.getElementById(`span-${j}-1`).style.right = '1rem'
+        document.getElementById(`span-${j}-2`).style.position = 'absolute'
+        document.getElementById(`span-${j}-2`).style.left = '1rem'
+        document.getElementById(`span-${j}-2`).style.top = '0.4rem'
+        document.getElementById(`span-${j}-3`).style.position = 'relative'
+        document.getElementById(`span-${j}-3`).style.zIndex = '1'
       }
     }
 

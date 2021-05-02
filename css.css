@@ -239,10 +239,11 @@ body {
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+  width: 100%;
 }
 
 #players-input{
-  width: 200px;
+  width: 60%;
   padding: 20px;
   font-size: 2rem;
 }
@@ -250,7 +251,7 @@ body {
 .form-submit{
   margin-top: 20px;
   padding: 10px;
-  width: 150px;
+  width: 40%;
   font-size: 1.5rem;
 }
 

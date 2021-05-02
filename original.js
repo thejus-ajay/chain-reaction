@@ -54,6 +54,7 @@ for (var i = 1; i < col * row + 1; i++) {
   btn.setAttribute('class', 'center')
   document.getElementById(i).onclick = function () {
     if (numberOfPlayer == 0) numberOfPlayer = 2
+ if (numberOfPlayer > 25) numberOfPlayer = 25
 
     // if (playerPosition[this.id] == (playernumber - 1)|| playerPosition[this.id] == 0) {
     ChainReaction(this)

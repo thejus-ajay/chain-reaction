@@ -1,0 +1,210 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: black;
+  text-align: center;
+  margin: 8rem auto;
+}
+
+.cornerOne {
+  background-color: white;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10%;
+  position: relative;
+  font-size: 1rem;
+}
+.cornerTwo {
+  background-color: white;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10%;
+  position: relative;
+  font-size: 1rem;
+}
+.cornerThree {
+  background-color: white;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10%;
+  position: relative;
+  font-size: 1rem;
+}
+.cornerFour {
+  background-color: white;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 10%;
+  position: relative;
+  font-size: 1rem;
+}
+.sideTop {
+  background-color: white;
+  width: 10rem;
+  border-radius: 10%;
+  height: 10rem;
+  position: relative;
+  font-size: 1rem;
+}
+.sideLeft {
+  background-color: white;
+  border-radius: 10%;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  font-size: 1rem;
+}
+.sideRight {
+  background-color: white;
+  border-radius: 10%;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  font-size: 1rem;
+}
+.sideDown {
+  background-color: white;
+  border-radius: 10%;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  font-size: 1rem;
+}
+.center {
+  background-color: white;
+  border-radius: 10%;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  font-size: 1rem;
+}
+
+@media (min-width: 250px) {
+  html {
+    font-size: 15%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 0.2rem;
+  }
+}
+@media (min-width: 320px) {
+  html {
+    font-size: 36%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 481px) {
+  html {
+    font-size: 23%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 0.7rem;
+  }
+}
+@media (min-width: 641px) {
+  html {
+    font-size: 30%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 700px) {
+  html {
+    font-size: 32%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 961px) {
+  html {
+    font-size: 37%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1025px) {
+  html {
+    font-size: 48%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1281px) {
+  html {
+    font-size: 60.5%;
+  }
+  .cornerOne,
+  .cornerTwo,
+  .cornerThree,
+  .cornerFour,
+  .sideTop,
+  .sideLeft,
+  .sideRight,
+  .sideDown,
+  .center {
+    font-size: 2rem;
+  }
+}

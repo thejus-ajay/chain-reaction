@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1281px) {
   html {
-    font-size: 60.5%;
+    font-size: 37.5%;
   }
   .cornerOne,
   .cornerTwo,
@@ -227,11 +227,11 @@ body {
   display: none;
   background-color: rgba(0,0,0,0.8);
   z-index: 20;
-  cursor: pointer;
   width: 40rem;
-  height: 40rem;
+  height: 50rem;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+  font-size: 4rem;
 }
 
 
@@ -243,18 +243,29 @@ body {
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   width: 100%;
+  letter-spacing: 3px;
+  font-weight: normal;
+}
+
+.about{
+  font-size: 3rem;
+  padding: 0 60px;
+  letter-spacing: normal;
+  line-height: 1.4;
+  margin-top: 10rem;
 }
 
 #players-input{
   width: 60%;
-  padding: 20px;
-  font-size: 2rem;
+  padding: 15px;
+  font-size: 3rem;
 }
 
 .form-submit{
   margin-top: 20px;
   padding: 10px;
   width: 40%;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 

@@ -98,6 +98,7 @@ for (var i = 1; i < col * row + 1; i++) {
 
   }
   // document.getElementById(i).innerHTML = i;
+  
   if (i % row == 0) {
     // creating space
 
